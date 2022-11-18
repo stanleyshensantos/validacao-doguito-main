@@ -111,7 +111,10 @@ function checaEstruturaCPF(cpf){
 
     return checaDigitoVerificador(cpf, multiplicador)
 }
-
+function checaDigitoVerificador(cpf, multiplicador){
+    let soma = 0
+    const cpfSemDigitos = cpf.substr(0, multiplicador - 1).
+}
 function confirmaDigito(soma){
     return 11 - (soma % 11)
 }
